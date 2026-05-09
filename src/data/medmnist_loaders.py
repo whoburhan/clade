@@ -49,7 +49,7 @@ class ThreeChannelWrapper(torch.utils.data.Dataset):
         img, label = self.base[idx]
         if img.shape[0] == 1:
             img = img.repeat(3, 1, 1)
-        return img, int(label)
+        return img, int(label.item()) if hasattr(label, 'item') else int(label)
 
 
 def get_medmnist_federated(dataset_name, data_dir="./data", num_clients=6,
