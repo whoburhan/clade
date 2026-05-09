@@ -1,0 +1,57 @@
+seed: 42
+device: "auto"
+num_rounds: 50
+num_clients: 6
+
+model:
+  backbone: "resnet18"
+  pretrained: true
+  head_hidden_dim: 128
+  head_dropout: 0.3
+
+training:
+  local_epochs: 3
+  head_finetune_epochs: 2
+  batch_size: 32
+  learning_rate: 0.001
+  head_learning_rate: 0.0005
+  optimizer: "adam"
+  weight_decay: 0.0001
+
+fedcpa:
+  recluster_interval: 5
+  ema_decay: 0.9
+  alpha_base: 0.3
+  alpha_max: 0.8
+  gamma: 0.05
+  sensitivity_margin: 0.15
+  min_cluster_size: 1
+
+fedprox:
+  mu: 0.01
+
+scaffold:
+  global_lr: 1.0
+
+ifca:
+  num_clusters: 3
+
+data:
+  dataset: "bloodmnist"
+  data_dir: "./data"
+  image_size: 224
+  num_workers: 0
+
+partition:
+  strategy: "pathological"
+  dirichlet_alpha: 0.5
+
+eval:
+  num_seeds: 3
+  seeds: [42, 123, 456]
+
+logging:
+  save_dir: "./results"
+  use_tensorboard: false
+  log_interval: 1
+  save_models: false
