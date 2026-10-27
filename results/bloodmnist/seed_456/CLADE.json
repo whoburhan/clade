@@ -1,0 +1,112 @@
+{
+  "rounds": [
+    {
+      "round": 1,
+      "global_accuracy": 0.957907044723765,
+      "worst_accuracy": 0.8959435626102292
+    },
+    {
+      "round": 2,
+      "global_accuracy": 0.9631686641332944,
+      "worst_accuracy": 0.8977072310405644
+    },
+    {
+      "round": 3,
+      "global_accuracy": 0.9581993569131833,
+      "worst_accuracy": 0.8959435626102292
+    }
+  ],
+  "client_history": {
+    "0": [
+      {
+        "round": 1,
+        "accuracy": 0.908289241622575,
+        "loss": 0.23496286421225815,
+        "num_samples": 567
+      },
+      {
+        "round": 2,
+        "accuracy": 0.8977072310405644,
+        "loss": 0.2669949286618981,
+        "num_samples": 567
+      },
+      {
+        "round": 3,
+        "accuracy": 0.8959435626102292,
+        "loss": 0.2707988552525771,
+        "num_samples": 567
+      }
+    ],
+    "1": [
+      {
+        "round": 1,
+        "accuracy": 0.8959435626102292,
+        "loss": 0.2759127363010689,
+        "num_samples": 567
+      },
+      {
+        "round": 2,
+        "accuracy": 0.9435626102292769,
+        "loss": 0.13741570335321746,
+        "num_samples": 567
+      },
+      {
+        "round": 3,
+        "accuracy": 0.9329805996472663,
+        "loss": 0.18376347017876896,
+        "num_samples": 567
+      }
+    ],
+    "2": [
+      {
+        "round": 1,
+        "accuracy": 0.9851398601398601,
+        "loss": 0.039436979365854205,
+        "num_samples": 1144
+      },
+      {
+        "round": 2,
+        "accuracy": 0.9903846153846154,
+        "loss": 0.02953352729164689,
+        "num_samples": 1144
+      },
+      {
+        "round": 3,
+        "accuracy": 0.9807692307692307,
+        "loss": 0.051583297146888044,
+        "num_samples": 1144
+      }
+    ],
+    "3": [
+      {
+        "round": 1,
+        "accuracy": 0.9860017497812773,
+        "loss": 0.06482898145575934,
+        "num_samples": 1143
+      },
+      {
+        "round": 2,
+        "accuracy": 0.9781277340332458,
+        "loss": 0.06413623452992631,
+        "num_samples": 1143
+      },
+      {
+        "round": 3,
+        "accuracy": 0.979002624671916,
+        "loss": 0.07391611298127385,
+        "num_samples": 1143
+      }
+    ]
+  },
+  "extra": {
+    "recluster_events": 1,
+    "final_clusters": {
+      "0": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  }
+}
